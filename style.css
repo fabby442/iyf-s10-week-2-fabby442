@@ -1,0 +1,129 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://via.placeholder.com/1200') center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTACT */
+.contact {
+  padding: 20px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* FOOTER */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+/* ========================= */
+/* ✨ POLISH & REFINEMENT */
+/* ========================= */
+
+/* HOVER EFFECTS */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* TRANSITIONS */
+.btn-primary,
+.card {
+  transition: all 0.3s ease;
+}
+
+/* FOCUS STATES */
+button:focus,
+input:focus {
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
+.social a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.social a:hover {
+  color: lightblue;
+}
+<div class="social">
+  <h3>Follow Me</h3>
+  <a href="https://github.com/fabby442" target="_blank">🐙 GitHub</a><br>
+  <a href="https://instagram.com/newfaceoffabby" target="_blank">📸 Instagram</a>
+</div>
