@@ -1,141 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-</head>
+  <style>
+    /* Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
+    /* Full page center */
+    body, html {
+      height: 100%;
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f8fafc;
+    }
+
+    /* Main container */
+    .main-content {
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #2563eb;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #64748b;
+    }
+
+    /* Games placeholders */
+    .games-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .game-card {
+      width: 200px;
+      height: 150px;
+      background: #f0f0f0;
+      border: 2px dashed #2563eb;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="navbar">
-    <div class="nav-logo">fabian</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-    <label for="nav-toggle" class="hamburger">&#9776;</label>
-    <h1>HOME</h1>
-<a href="projects.html">Go to Projects</a>
-  </nav>
-<!-- Completed Games Section -->
-<section class="completed-games">
-  <h2>Completed Challenges</h2>
-  <div class="games-gallery">
-    <div class="game-card">
-      <img src="https://placehold.co/200x150?text=Flexbox+Froggy" alt="Flexbox Froggy Completed Levels" />
-      <p>Flexbox Froggy</p>
-    </div>
-    <div class="game-card">
-      <img src="https://placehold.co/200x150?text=CSS+Grid+Garden" alt="CSS Grid Garden Completed Levels" />
-      <p>CSS Grid Garden</p>
+  <div class="main-content">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Check out my projects and completed challenges below!</p>
+
+    <!-- Completed Games Section -->
+    <div class="games-gallery">
+      <div class="game-card"></div>
+      <div class="game-card"></div>
     </div>
   </div>
-</section>
-
-<section class="completed-games">
-  <h2>Completed Challenges</h2>
-  <div class="games-gallery">
-    <div class="game-card"></div>
-    <div class="game-card"></div>
-  </div>
-</section>
-
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-      <p>A passionate web developer building beautiful, responsive websites.</p>
-      <a href="projects.html" class="btn btn-primary">View My Projects</a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="about-section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I'm a developer learning to build the web, one line of CSS at a time. I love creating responsive, accessible,
-        and beautiful user interfaces.</p>
-    </div>
-  </section>
-
-  <!-- CARD ROW (3 cards) -->
-  <section class="cards-section">
-    <div class="container">
-      <h2>What I Do</h2>
-      <div class="card-row">
-        <div class="card">
-          <img src="https://placehold.co/300x180?text=HTML" alt="HTML" />
-          <div class="card-body">
-            <span class="tag">HTML5</span>
-            <h3>Semantic Structure</h3>
-            <p>Building well-structured, accessible HTML documents.</p>
-            <a href="#" class="btn btn-secondary">Learn More</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://placehold.co/300x180?text=CSS" alt="CSS" />
-          <div class="card-body">
-            <span class="tag">CSS3</span>
-            <h3>Beautiful Styling</h3>
-            <p>Creating responsive layouts with Flexbox and Grid.</p>
-            <a href="#" class="btn btn-secondary">Learn More</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://placehold.co/300x180?text=JS" alt="JavaScript" />
-          <div class="card-body">
-            <span class="tag">JavaScript</span>
-            <h3>Interactivity</h3>
-            <p>Adding dynamic behavior to web pages.</p>
-            <a href="#" class="btn btn-secondary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h4>About</h4>
-        <p>A passionate developer building the web.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>email@fabianmunga163@gmail.com</p>
-      </div>
-      <div class="footer-col">
-        <h4>Social</h4>
-        <p>🐙 GitHub: fabby442<br>📸 Instagram: newfaceoffabby</p>
-      </div>
-    </div>
-    <div class="footer-copy">
-      <p>&copy; 2026 YourName. All rights reserved.</p>
-    </div>
-  </footer>
 
 </body>
-
 </html>
