@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Fabby</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">Fabby</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="hamburger">&#9776;</label>
+  </nav>
+
+  <section class="contact-hero">
+    <h1>Contact Me</h1>
+    <p>I'd love to hear from you!</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-layout">
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="What's this about?" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="button" class="btn-submit">Send Message ✉️</button>
+      </div>
+
+      <div class="contact-sidebar">
+        <h3>Get in Touch</h3>
+        <div class="contact-info-item"><span>📧</span><div><strong>Email</strong><p>email@example.com</p></div></div>
+        <div class="contact-info-item"><span>🐙</span><div><strong>GitHub</strong><p><a href="https://github.com/fabby442" target="_blank">fabby442</a></p></div></div>
+        <div class="contact-info-item"><span>📸</span><div><strong>Instagram</strong><p><a href="https://instagram.com/newfaceoffabby" target="_blank">newfaceoffabby</a></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (same as index.html) -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>About</h4><p>A passionate developer building the web.</p></div>
+      <div class="footer-col"><h4>Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col"><h4>Social</h4>
+        <p>
+          <a href="https://github.com/fabby442" target="_blank">🐙 GitHub</a> &nbsp;
+          <a href="https://instagram.com/newfaceoffabby" target="_blank">📸 Instagram</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-copy"><p>&copy; 2026 Fabby. All rights reserved.</p></div>
+  </footer>
+
+</body>
+</html>
