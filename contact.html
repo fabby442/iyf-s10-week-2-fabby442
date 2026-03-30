@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <h1>PROJECTS PAGE WORKING ✅</h1>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="logo">YourName</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">YourName</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="hamburger">&#9776;</label>
+  </nav>
 
-<section class="page">
-  <h1>Contact Me</h1>
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
-  <form class="form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Message"></textarea>
-    <button type="submit">Send</button>
-  </form>
-
-  <div class="contact-info">
-    <p>Email: email@example.com</p>
-    <p>GitHub: fabby442</p>
-    <p>Instagram: newfaceoffabby</p>
-  </div>
-</section>
+  <footer class="footer">
+    <p>&copy; 2026 YourName. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>

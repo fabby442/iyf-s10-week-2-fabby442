@@ -1,63 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
+  <!-- NAV -->
   <nav class="navbar">
-    <div class="logo">YourName</div>
-    <ul>
+    <div class="nav-logo">YourName</div>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="hamburger">&#9776;</label>
   </nav>
 
-  <section class="page">
+  <section class="projects-section">
     <h1>My Projects</h1>
-
-    <!-- FLEXBOX FROGGY -->
-    <div class="project-box">
-      <h2>Flexbox Froggy</h2>
-      <p>Completed all 24 levels</p>
-
-      <input type="file" accept="image/*" onchange="showImage(event, 'froggyPreview')">
-      <img id="froggyPreview" class="preview" />
+    <div class="projects-grid">
+      <div class="project-card"><img src="https://placehold.co/300x160?text=Project+1" alt="Project 1"></div>
+      <div class="project-card"><img src="https://placehold.co/300x160?text=Project+2" alt="Project 2"></div>
+      <div class="project-card"><img src="https://placehold.co/300x160?text=Project+3" alt="Project 3"></div>
+      <div class="project-card"><img src="https://placehold.co/300x160?text=Project+4" alt="Project 4"></div>
     </div>
-
-    <!-- GRID GARDEN -->
-    <div class="project-box">
-      <h2>Grid Garden</h2>
-      <p>Completed all 28 levels</p>
-
-      <input type="file" accept="image/*" onchange="showImage(event, 'gridPreview')">
-      <img id="gridPreview" class="preview" />
-    </div>
-
-    <!-- BOX MODEL -->
-    <div class="project-box">
-      <h2>Box Model Practice</h2>
-      <a href="box-model-practice.html" class="btn">Open Project</a>
-    </div>
-
   </section>
 
-  <script>
-    function showImage(event, id) {
-      const img = document.getElementById(id);
-      img.src = URL.createObjectURL(event.target.files[0]);
-    }
-  </script>
+  <footer class="footer">
+    <p>&copy; 2026 YourName. All rights reserved.</p>
+  </footer>
 
 </body>
-
 </html>
