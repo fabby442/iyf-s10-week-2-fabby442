@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<nav class="navbar">
-  <div class="logo">YourName</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <nav class="navbar">
+    <div class="logo">YourName</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<section class="page">
-  <h1>My Projects</h1>
+  <section class="page">
+    <h1>My Projects</h1>
 
-  <!-- FLEXBOX FROGGY -->
-  <div class="project-box">
-    <h2>Flexbox Froggy</h2>
-    <p>Completed all 24 levels</p>
+    <!-- FLEXBOX FROGGY -->
+    <div class="project-box">
+      <h2>Flexbox Froggy</h2>
+      <p>Completed all 24 levels</p>
 
-    <input type="file" accept="image/*" onchange="showImage(event, 'froggyPreview')">
-    <img id="froggyPreview" class="preview"/>
-  </div>
+      <input type="file" accept="image/*" onchange="showImage(event, 'froggyPreview')">
+      <img id="froggyPreview" class="preview" />
+    </div>
 
-  <!-- GRID GARDEN -->
-  <div class="project-box">
-    <h2>Grid Garden</h2>
-    <p>Completed all 28 levels</p>
+    <!-- GRID GARDEN -->
+    <div class="project-box">
+      <h2>Grid Garden</h2>
+      <p>Completed all 28 levels</p>
 
-    <input type="file" accept="image/*" onchange="showImage(event, 'gridPreview')">
-    <img id="gridPreview" class="preview"/>
-  </div>
+      <input type="file" accept="image/*" onchange="showImage(event, 'gridPreview')">
+      <img id="gridPreview" class="preview" />
+    </div>
 
-  <!-- BOX MODEL -->
-  <div class="project-box">
-    <h2>Box Model Practice</h2>
-    <a href="box-model-practice.html" class="btn">Open Project</a>
-  </div>
+    <!-- BOX MODEL -->
+    <div class="project-box">
+      <h2>Box Model Practice</h2>
+      <a href="box-model-practice.html" class="btn">Open Project</a>
+    </div>
 
-</section>
+  </section>
 
-<script>
-function showImage(event, id) {
-  const img = document.getElementById(id);
-  img.src = URL.createObjectURL(event.target.files[0]);
-}
-</script>
+  <script>
+    function showImage(event, id) {
+      const img = document.getElementById(id);
+      img.src = URL.createObjectURL(event.target.files[0]);
+    }
+  </script>
 
 </body>
+
 </html>
