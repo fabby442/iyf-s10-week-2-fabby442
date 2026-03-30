@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="navbar">
     <div class="nav-logo">YourName</div>
     <ul class="nav-links">
@@ -16,23 +15,22 @@
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="hamburger">&#9776;</label>
   </nav>
 
-  <section class="contact-section">
+  <section class="contact">
     <h1>Contact Me</h1>
     <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="John Doe" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="john@example.com" required>
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Write your message..." required></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
-
-  <footer class="footer">
-    <p>&copy; 2026 YourName. All rights reserved.</p>
-  </footer>
 
 </body>
 </html>
