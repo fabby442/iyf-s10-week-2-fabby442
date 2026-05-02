@@ -1,45 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="nav-logo">YourName</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="hamburger">&#9776;</label>
-  </nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            YourName
+        </div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Check out my CSS mastery and projects!</p>
-  </section>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-  <!-- Completed Exercises -->
-  <section class="completed-projects">
-    <h2>Completed Exercises</h2>
-    <div class="completed-grid">
-      <div class="completed-item">
-        <img src="images/IMG_20260330_194853.jpg" alt="Flexbox Completed">
-        <p>Flexbox Froggy</p>
-      </div>
-      <div class="completed-item">
-        <img src="images/IMG_20260330_200601.jpg" alt="Grid Completed">
-        <p>CSS Grid Garden</p>
-      </div>
-    </div>
-  </section>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger">&#9776;</label>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>
+            I am learning HTML, CSS, Flexbox, Grid, and building real frontend projects.
+        </p>
+    </section>
+
+    <!-- Card Row -->
+    <section class="card-row">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x180" alt="Project 1">
+            <h2>Project One</h2>
+            <p>A simple project using HTML and CSS.</p>
+            <button class="card-btn">View Project</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x180" alt="Project 2">
+            <h2>Project Two</h2>
+            <p>A responsive layout built with Flexbox.</p>
+            <button class="card-btn">View Project</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x180" alt="Project 3">
+            <h2>Project Three</h2>
+            <p>A portfolio project using clean design systems.</p>
+            <button class="card-btn">View Project</button>
+        </div>
+
+    </section>
+
+    <!-- Completed Exercises Section -->
+    <section class="completed-projects">
+        <h2>Completed Exercises</h2>
+
+        <div class="completed-grid">
+
+            <div class="completed-item">
+                <img src="images/IMG_20260330_194853.jpg" alt="Flexbox Froggy Completed">
+                <p>Flexbox Froggy Completed</p>
+            </div>
+
+            <div class="completed-item">
+                <img src="images/IMG_20260330_200601.jpg" alt="Grid Garden Completed">
+                <p>CSS Grid Garden Completed</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-columns">
+
+            <div>
+                <h3>About</h3>
+                <p>Frontend developer learning modern web development.</p>
+            </div>
+
+            <div>
+                <h3>Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="projects.html">Projects</a></p>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>Email: example@email.com</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 My Portfolio. All rights reserved.
+        </div>
+
+    </footer>
 
 </body>
 </html>
