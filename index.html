@@ -1,111 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabian Munga — Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="nav-logo">
-            YourName
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">fabby<span>.</span>dev</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary nav-cta" style="text-decoration:none">Hire Me</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow animate-fade-up">Frontend Developer & CSS Enthusiast</p>
+          <h1 class="hero-title animate-fade-up animate-delay-1">
+            Hi, I'm <span class="highlight">Fabian</span><br>I Build the Web
+          </h1>
+          <p class="hero-subtitle animate-fade-up animate-delay-2">
+            I craft responsive, accessible, and beautifully designed websites. Currently mastering CSS Grid, Flexbox, and modern layout techniques — one property at a time.
+          </p>
+          <div class="hero-actions animate-fade-up animate-delay-3">
+            <a href="projects.html" class="btn btn-primary">View Projects →</a>
+            <a href="about.html" class="btn btn-outline">About Me</a>
+          </div>
+          <div class="hero-contact-strip animate-fade-up animate-delay-3">
+            <a href="https://github.com/fabby442" target="_blank" class="contact-pill">
+              <span>📦</span> fabby442
+            </a>
+            <a href="https://instagram.com/newfaceoffabby" target="_blank" class="contact-pill">
+              <span>📸</span> @newfaceoffabby
+            </a>
+            <a href="mailto:fabianmunga@gmail.com" class="contact-pill">
+              <span>✉️</span> fabianmunga@gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="hero-image animate-fade-up animate-delay-2">
+          <div class="hero-avatar-wrap float">
+            <div class="hero-avatar-placeholder">👨‍💻</div>
+            <div class="hero-badge">🟢 Available for work</div>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stats-num">52</div>
+            <div class="hero-stats-label">CSS Levels<br>Completed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS STRIP -->
+  <div class="skills-strip">
+    <div class="skills-scroll">
+      <span class="skill-item"><span class="skill-dot"></span>HTML5</span>
+      <span class="skill-item"><span class="skill-dot"></span>CSS3</span>
+      <span class="skill-item"><span class="skill-dot"></span>CSS Grid</span>
+      <span class="skill-item"><span class="skill-dot"></span>Flexbox</span>
+      <span class="skill-item"><span class="skill-dot"></span>Responsive Design</span>
+      <span class="skill-item"><span class="skill-dot"></span>JavaScript</span>
+      <span class="skill-item"><span class="skill-dot"></span>Google Fonts</span>
+      <span class="skill-item"><span class="skill-dot"></span>CSS Variables</span>
+      <span class="skill-item"><span class="skill-dot"></span>Box Model</span>
+      <span class="skill-item"><span class="skill-dot"></span>Typography Systems</span>
+      <span class="skill-item"><span class="skill-dot"></span>Color Theory</span>
+      <span class="skill-item"><span class="skill-dot"></span>VS Code</span>
+      <!-- duplicate for seamless loop -->
+      <span class="skill-item"><span class="skill-dot"></span>HTML5</span>
+      <span class="skill-item"><span class="skill-dot"></span>CSS3</span>
+      <span class="skill-item"><span class="skill-dot"></span>CSS Grid</span>
+      <span class="skill-item"><span class="skill-dot"></span>Flexbox</span>
+      <span class="skill-item"><span class="skill-dot"></span>Responsive Design</span>
+      <span class="skill-item"><span class="skill-dot"></span>JavaScript</span>
+      <span class="skill-item"><span class="skill-dot"></span>Google Fonts</span>
+      <span class="skill-item"><span class="skill-dot"></span>CSS Variables</span>
+      <span class="skill-item"><span class="skill-dot"></span>Box Model</span>
+      <span class="skill-item"><span class="skill-dot"></span>Typography Systems</span>
+      <span class="skill-item"><span class="skill-dot"></span>Color Theory</span>
+      <span class="skill-item"><span class="skill-dot"></span>VS Code</span>
+    </div>
+  </div>
+
+  <!-- FEATURED PROJECTS TEASER -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Featured Work</p>
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:3rem; flex-wrap:wrap; gap:1rem;">
+        <h2 style="color:var(--color-text); max-width:500px;">Projects I've Built While Learning CSS</h2>
+        <a href="projects.html" class="btn btn-outline">All Projects →</a>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-img-wrap">
+            <img src="grid-garden.jpg" alt="CSS Grid Garden - completed all 28 levels">
+            <div class="project-overlay">
+              <a href="https://cssgridgarden.com" target="_blank" class="project-link-btn">Visit Site →</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-number">01 / ACHIEVEMENT</p>
+            <h3 class="project-title">CSS Grid Garden — All 28 Levels ✅</h3>
+            <p class="project-desc">Completed every challenge in Grid Garden, mastering CSS Grid fundamentals: grid-column, grid-row, grid-area, grid-template, and responsive grid layouts using fr units and minmax().</p>
+            <div class="project-tags">
+              <span class="tag">CSS Grid</span>
+              <span class="tag">grid-template</span>
+              <span class="tag">fr units</span>
+              <span class="tag">minmax()</span>
+              <span class="tag">grid-area</span>
+            </div>
+          </div>
         </div>
 
-        <ul class="nav-links">
+        <div class="project-card">
+          <div class="project-img-wrap">
+            <img src="flexbox-froggy.jpg" alt="Flexbox Froggy - completed all 24 levels">
+            <div class="project-overlay">
+              <a href="https://flexboxfroggy.com" target="_blank" class="project-link-btn">Visit Site →</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-number">02 / ACHIEVEMENT</p>
+            <h3 class="project-title">Flexbox Froggy — All 24 Levels ✅</h3>
+            <p class="project-desc">Mastered Flexbox by helping frogs reach lily pads — completed all 24 levels covering justify-content, align-items, flex-wrap, flex-direction, and flex-grow.</p>
+            <div class="project-tags">
+              <span class="tag">Flexbox</span>
+              <span class="tag">justify-content</span>
+              <span class="tag">align-items</span>
+              <span class="tag">flex-wrap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img-wrap" style="background:linear-gradient(135deg,#1a1a2e,#16213e);display:flex;align-items:center;justify-content:center;font-size:4rem;">
+            🎨
+          </div>
+          <div class="project-body">
+            <p class="project-number">03 / PROJECT</p>
+            <h3 class="project-title">This Portfolio</h3>
+            <p class="project-desc">Built from scratch applying everything from Week 2: CSS variables, typography systems, color schemes, Grid & Flexbox layouts, and full mobile responsiveness.</p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Responsive</span>
+              <span class="tag">CSS Variables</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">fabby<span style="color:var(--color-primary)">.</span>dev</div>
+          <p>A frontend developer in training. Building beautiful things one CSS property at a time.</p>
+          <div class="footer-socials" style="margin-top:1.25rem;">
+            <a href="https://github.com/fabby442" target="_blank" class="social-icon" title="GitHub">📦</a>
+            <a href="https://instagram.com/newfaceoffabby" target="_blank" class="social-icon" title="Instagram">📸</a>
+            <a href="mailto:fabianmunga@gmail.com" class="social-icon" title="Email">✉️</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Navigation</p>
+          <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="hamburger">&#9776;</label>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>
-            I am learning HTML, CSS, Flexbox, Grid, and building real frontend projects.
-        </p>
-    </section>
-
-    <!-- Card Row -->
-    <section class="card-row">
-
-        <div class="card">
-            <img src="https://via.placeholder.com/300x180" alt="Project 1">
-            <h2>Project One</h2>
-            <p>A simple project using HTML and CSS.</p>
-            <button class="card-btn">View Project</button>
+          </ul>
         </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/300x180" alt="Project 2">
-            <h2>Project Two</h2>
-            <p>A responsive layout built with Flexbox.</p>
-            <button class="card-btn">View Project</button>
+        <div>
+          <p class="footer-col-title">Resources</p>
+          <ul class="footer-links">
+            <li><a href="https://cssgridgarden.com" target="_blank">Grid Garden</a></li>
+            <li><a href="https://flexboxfroggy.com" target="_blank">Flexbox Froggy</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank">MDN Docs</a></li>
+            <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+          </ul>
         </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/300x180" alt="Project 3">
-            <h2>Project Three</h2>
-            <p>A portfolio project using clean design systems.</p>
-            <button class="card-btn">View Project</button>
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <ul class="footer-links">
+            <li><a href="mailto:fabianmunga@gmail.com">fabianmunga@gmail.com</a></li>
+            <li><a href="tel:+254741906620">+254 741 906 620</a></li>
+            <li><a href="contact.html">Send a Message</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Fabian Munga — All rights reserved.</p>
+        <p class="footer-made">Made with <span>♥</span> and a lot of CSS</p>
+      </div>
+    </div>
+  </footer>
 
-    </section>
-
-    <!-- Completed Exercises Section -->
-    <section class="completed-projects">
-        <h2>Completed Exercises</h2>
-
-        <div class="completed-grid">
-
-            <div class="completed-item">
-                <img src="images/IMG_20260330_194853.jpg" alt="Flexbox Froggy Completed">
-                <p>Flexbox Froggy Completed</p>
-            </div>
-
-            <div class="completed-item">
-                <img src="images/IMG_20260330_200601.jpg" alt="Grid Garden Completed">
-                <p>CSS Grid Garden Completed</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-
-        <div class="footer-columns">
-
-            <div>
-                <h3>About</h3>
-                <p>Frontend developer learning modern web development.</p>
-            </div>
-
-            <div>
-                <h3>Links</h3>
-                <p><a href="index.html">Home</a></p>
-                <p><a href="projects.html">Projects</a></p>
-            </div>
-
-            <div>
-                <h3>Contact</h3>
-                <p>Email: example@email.com</p>
-            </div>
-
-        </div>
-
-        <div class="copyright">
-            © 2026 My Portfolio. All rights reserved.
-        </div>
-
-    </footer>
-
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
 </body>
 </html>
+<a href="https://code-x-change.netlify.app/" target="_blank">
+  Visit my website
+</a>

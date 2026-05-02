@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Fabian Munga</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">fabby<span>.</span>dev</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn-primary nav-cta" style="text-decoration:none">Hire Me</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container">
+      <p class="section-label">About Me</p>
+      <h1>The Developer<br>Behind the Code</h1>
+      <p>Passionate about creating beautiful web experiences. Currently on a structured learning journey mastering modern CSS.</p>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="section" style="padding-top:2rem;">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual animate-fade-up">
+          <div class="about-card-stack">
+            <div class="about-bg-card"></div>
+            <div class="about-main-card">
+              <div class="about-code">
+                <div><span class="kw">const</span> <span class="fn">developer</span> = {</div>
+                <div>&nbsp;&nbsp;name: <span class="str">"Fabian Munga"</span>,</div>
+                <div>&nbsp;&nbsp;alias: <span class="str">"fabby"</span>,</div>
+                <div>&nbsp;&nbsp;role: <span class="str">"Frontend Dev"</span>,</div>
+                <div>&nbsp;&nbsp;loves: [<span class="str">"CSS"</span>, <span class="str">"Design"</span>],</div>
+                <div>&nbsp;&nbsp;gridGarden: <span class="str">"28/28 ✅"</span>,</div>
+                <div>&nbsp;&nbsp;flexFroggy: <span class="str">"24/24 ✅"</span>,</div>
+                <div>&nbsp;&nbsp;github: <span class="str">"fabby442"</span>,</div>
+                <div>&nbsp;&nbsp;available: <span class="kw">true</span></div>
+                <div>}</div>
+              </div>
+              <div>
+                <p style="font-size:var(--font-xs);color:var(--color-muted);margin-bottom:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;">Tools I Use</p>
+                <div class="about-tools">
+                  <span class="tag">VS Code</span>
+                  <span class="tag">Chrome DevTools</span>
+                  <span class="tag">Git</span>
+                  <span class="tag">Figma</span>
+                  <span class="tag">MDN</span>
+                  <span class="tag">CSS Tricks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text animate-fade-up animate-delay-1">
+          <p class="section-label">My Story</p>
+          <h2>Learning to Build the Web, One Property at a Time</h2>
+          <p>I'm Fabian Munga — a developer in the making, currently deep in a structured frontend curriculum. Week 2 has been all about CSS — and I've fallen in love with how much power and creativity this language gives you.</p>
+          <p>From understanding the box model to building full responsive layouts, every day brings new "aha!" moments. Completing all 28 levels of Grid Garden and all 24 levels of Flexbox Froggy was a milestone I'm genuinely proud of.</p>
+          <p>My goal is to build professional, accessible, and beautiful web experiences — and this portfolio is step one.</p>
+
+          <ul class="about-list">
+            <li>CSS Grid & Flexbox — fully mastered</li>
+            <li>Mobile-first responsive design</li>
+            <li>Typography systems with CSS variables</li>
+            <li>Clean, semantic HTML5 structure</li>
+            <li>Accessibility-conscious development</li>
+          </ul>
+
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="projects.html" class="btn btn-primary">See My Work</a>
+            <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPOGRAPHY SYSTEM DEMO -->
+  <section class="section" style="background:var(--color-surface);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
+    <div class="container">
+      <p class="section-label">Task 3.3 — Deliverable</p>
+      <h2 style="color:var(--color-text);margin-bottom:0.75rem;">Typography System</h2>
+      <p style="margin-bottom:3rem;">The type scale used across this portfolio, built with CSS custom properties.</p>
+
+      <div class="type-scale">
+        <div class="type-row">
+          <span class="type-label">--font-4xl<br>2.25rem</span>
+          <span style="font-family:var(--font-display);font-size:var(--font-4xl);font-weight:800;color:var(--color-text);">Page Title / H1</span>
+        </div>
+        <div class="type-row">
+          <span class="type-label">--font-3xl<br>1.875rem</span>
+          <span style="font-family:var(--font-display);font-size:var(--font-3xl);font-weight:700;color:var(--color-text);">Section Heading / H2</span>
+        </div>
+        <div class="type-row">
+          <span class="type-label">--font-2xl<br>1.5rem</span>
+          <span style="font-family:var(--font-display);font-size:var(--font-2xl);font-weight:700;color:var(--color-text);">Card Title / H3</span>
+        </div>
+        <div class="type-row">
+          <span class="type-label">--font-base<br>1rem</span>
+          <span style="font-size:var(--font-base);color:var(--color-muted);">Body text — the main paragraph size used for reading. Comfortable line-height of 1.7.</span>
+        </div>
+        <div class="type-row">
+          <span class="type-label">--font-sm<br>0.875rem</span>
+          <span style="font-size:var(--font-sm);color:var(--color-muted);">Small text — used for labels, captions, and secondary information.</span>
+        </div>
+        <div class="type-row">
+          <span class="type-label">--font-xs<br>0.75rem</span>
+          <span style="font-size:var(--font-xs);letter-spacing:0.1em;text-transform:uppercase;font-weight:600;color:var(--color-primary);">MICRO LABELS — tags, categories, section markers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLOR SCHEME DEMO -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Task 3.4 — Deliverable</p>
+      <h2 style="color:var(--color-text);margin-bottom:0.75rem;">Color Scheme</h2>
+      <p style="margin-bottom:3rem;">The color palette powering this portfolio, defined as CSS custom properties.</p>
+
+      <div class="color-palette">
+        <div class="color-swatch">
+          <div class="color-swatch-fill" style="background:var(--color-primary);"></div>
+          <div class="color-swatch-info">
+            <div class="color-swatch-name">Primary</div>
+            <div class="color-swatch-hex">#e8ff5a</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-swatch-fill" style="background:var(--color-secondary);"></div>
+          <div class="color-swatch-info">
+            <div class="color-swatch-name">Secondary</div>
+            <div class="color-swatch-hex">#ff5a8a</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-swatch-fill" style="background:var(--color-accent);"></div>
+          <div class="color-swatch-info">
+            <div class="color-swatch-name">Accent</div>
+            <div class="color-swatch-hex">#5af0ff</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-swatch-fill" style="background:var(--color-surface);border:1px solid var(--color-border);"></div>
+          <div class="color-swatch-info">
+            <div class="color-swatch-name">Surface</div>
+            <div class="color-swatch-hex">#111118</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="color-swatch-fill" style="background:var(--color-muted);"></div>
+          <div class="color-swatch-info">
+            <div class="color-swatch-name">Muted</div>
+            <div class="color-swatch-hex">#7a7a8c</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOX MODEL DEMO -->
+  <section class="section" style="background:var(--color-surface);border-top:1px solid var(--color-border);">
+    <div class="container">
+      <p class="section-label">Task 3.2 — Deliverable</p>
+      <h2 style="color:var(--color-text);margin-bottom:0.75rem;">Box Model Visualization</h2>
+      <p style="margin-bottom:2rem;">Visual representation of the CSS box model layers.</p>
+      <div class="box-model-demo">
+        <div class="bm-box bm-margin">Margin</div>
+        <div class="bm-box bm-border">Border</div>
+        <div class="bm-box bm-padding">Padding</div>
+        <div class="bm-box bm-content">Content</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUTTON SHOWCASE -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Day 1 Challenge — Deliverable</p>
+      <h2 style="color:var(--color-text);margin-bottom:0.75rem;">Button Styles</h2>
+      <p style="margin-bottom:2rem;">Four button variants with hover states, built for the daily challenge.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;">
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-outline">Secondary Outline</button>
+        <button class="btn btn-danger">Danger Action</button>
+        <button class="btn btn-disabled" disabled>Disabled State</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">fabby<span style="color:var(--color-primary)">.</span>dev</div>
+          <p>A frontend developer in training. Building beautiful things one CSS property at a time.</p>
+          <div class="footer-socials" style="margin-top:1.25rem;">
+            <a href="https://github.com/fabby442" target="_blank" class="social-icon">📦</a>
+            <a href="https://instagram.com/newfaceoffabby" target="_blank" class="social-icon">📸</a>
+            <a href="mailto:fabianmunga@gmail.com" class="social-icon">✉️</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Resources</p>
+          <ul class="footer-links">
+            <li><a href="https://cssgridgarden.com" target="_blank">Grid Garden</a></li>
+            <li><a href="https://flexboxfroggy.com" target="_blank">Flexbox Froggy</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank">MDN Docs</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <ul class="footer-links">
+            <li><a href="mailto:fabianmunga@gmail.com">fabianmunga@gmail.com</a></li>
+            <li><a href="tel:+254741906620">+254 741 906 620</a></li>
+            <li><a href="contact.html">Send a Message</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Fabian Munga — All rights reserved.</p>
+        <p class="footer-made">Made with <span>♥</span> and a lot of CSS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>
