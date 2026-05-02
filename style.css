@@ -314,3 +314,65 @@ a:hover {
         margin: auto;
     }
 }
+/* =========================
+   HOVER STATES
+========================= */
+
+/* Buttons */
+.card-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Links */
+a:hover {
+    color: var(--color-primary-dark);
+}
+
+/* Cards */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+/* =========================
+   TRANSITIONS
+========================= */
+
+button,
+.card,
+a {
+    transition: all 0.3s ease;
+}
+/* =========================
+   FOCUS STATES (ACCESSIBILITY)
+========================= */
+
+a:focus,
+button:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* =========================
+   FINAL CLEANUP
+========================= */
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
