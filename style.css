@@ -223,3 +223,94 @@ a:hover {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+/* =========================
+   MOBILE NAVIGATION
+========================= */
+
+.nav-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        padding: 15px;
+        border: 1px solid #ddd;
+    }
+
+    .nav-toggle:checked + .hamburger + .nav-links {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        position: relative;
+    }
+}
+/* =========================
+   MOBILE FIRST BASE LAYOUT
+========================= */
+
+.card-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+}
+
+/* Completed section */
+.completed-grid {
+    grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+
+    .card-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 48%;
+    }
+
+    .completed-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+
+    .card {
+        width: 30%;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1280px) {
+
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
